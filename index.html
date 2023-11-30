@@ -11,6 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/scripts.js"></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -19,7 +20,6 @@
   <body>
     <main>
       <section id="subscription-content">
-
         <div id="subscription-message">
           <h1>Stay updated!</h1>
           <p>Join 60.000+ product managers recieving monthly updates on:</p>
@@ -37,17 +37,27 @@
               <p>And much more!</p>
             </span>
           </div>
-
         </div>
         <form>
-          <h1>Email address</h1>
-            <input type="email" placeholder="email@company.com"/>
-            <button type="submit">Subscribe to monthly newsletter</button>
+          <label for="email-input">Email address</label>
+          <input
+            type="email"
+            name="email-input"
+            id="email-input"
+            placeholder="email@company.com"
+            required
+          />
+          <button id="submit-button" type="submit">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </section>
 
       <aside>
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration" />
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration"
+        />
       </aside>
     </main>
 
